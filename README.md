@@ -18,13 +18,13 @@ This notebook is Binder enabled and can be run on [mybinder.org](https://mybinde
 
 
 ### YA_01_ForecastingDstIndexBayesianDeepLearning.ipynb (Jupyter Notebook for Dst-prediction)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccsc-tools/Dst-prediction/HEAD?labpath=YA_01_ForecastingDstIndexBayesianDeepLearning.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ccsc-tools/TSInet-irradiance-reconstruction/HEAD?labpath=/YA_01_ReconstructionOfTSIbyDeepLearning.ipynb )
 
 Please note that starting Binder might take some time to create and start the image.
 
 Please also note that the execution time in Binder varies based on the availability of resources. The average time to run the notebook is 10-15 minutes, but it could be more.
 
-For the latest updates of the tool refer to https://github.com/deepsuncode/Dst-prediction
+For the latest updates of the tool refer to https://github.com/deepsuncode/TSInet-irradiance-reconstruction
 
 ## Installation on local machine
 
