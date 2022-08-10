@@ -30,14 +30,11 @@ For the latest updates of the tool refer to https://github.com/deepsuncode/TSIne
 
 |Library | Version   | Description  |
 |---|---|---|
-|keras| 2.6.0 | Deep learning API|
+|keras| 2.3.0 | Deep learning API|
+|keras_self_attention|latest| Self attention mechanism|
 |numpy| 1.21.5| Array manipulation|
-|scikit-learn| 1.0.1| Machine learning|
 |sklearn| latest| Tools for predictive data analysis|
-|matlabplot| 3.4.3| Visutalization tool|
 | pandas|1.3.4| Data loading and manipulation|
-| seaborn | 0.11.2| Visualization tool|
 | scipy|1.7.1| Provides algorithms for optimization and statistics|
-| tensorboard| 2.7.0 | Provides the visualization and tooling needed for machine learning|
-| tensorflow-gpu| 2.6.1| Deep learning tool for high performance computation |
-|tensorflow-probability | 0.14.1| For probabilistic models|
+| tensorflow| 1.14 or 2.4| Provides the visualization and tooling needed for machine learning|
+| tensorflow-gpu| 1.14 or 2.4| Deep learning tool for high performance computation |

@@ -29,8 +29,8 @@ scipy
 tensorflow==2.4
 tensorflow-gpu==2.4
 
-To install the required packages, you may use Python package manager ìpipî as follow:
-1.	Copy the above packages into a text file,  ie ìrequirements.txtî
+To install the required packages, you may use Python package manager ‚Äúpip‚Äù as follow:
+1.	Copy the above packages into a text file,  ie ‚Äúrequirements.txt‚Äù
 2.	Execute the command:
 pip install -r requirements.txt
 Note: There is a requirements file already created for you to use that includes tensorflow==1.14 which should be used with Python 3.6.8 pip package manager. 
@@ -61,7 +61,7 @@ After downloading the zip files from https://web.njit.edu/~wangj/TSInet/, unzip 
  tsinet_utils.py         - utilities program used by the test and training programs.
  
 Running a Test/Reconstruction Task:
-1.	To run a test/reconstruction, you should use the existing data sets from the "test_dataî directory. 
+1.	To run a test/reconstruction, you should use the existing data sets from the "test_data‚Äù directory. 
  tsinet_test.py is used to run the test/reconstruction. 
 Type: python tsinet_test.py -h will show you the available options as follows:
 	usage: tsinet_reconstructor.py [-h] -n DATASET_NAME [-r RESULT_FILE_NAME] [-e EPOCHS] [-z NUMBER_OF_DAYS] [-k K_STEPS] [-l VERBOSE]                                                                
