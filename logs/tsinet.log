@@ -46976,3 +46976,2335 @@
 [2021-05-12 01:24:04]  Re-Fitting models... 
 [2021-05-12 02:08:47]  Working on  1600000 of 3157250 
 [2021-05-12 02:08:47]  Re-Fitting models... 
+[2022-08-11 13:35:58]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 13:35:58]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 13:35:58]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 13:35:58]  len(dataset.values) 1650 
+[2022-08-11 13:35:58]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 13:35:58]  Removing std_dev_measurement_date (days) 
+[2022-08-11 13:35:58]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 13:35:58]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 13:35:58]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 13:35:58]  Removing std_dev_measurement_date (days) 
+[2022-08-11 13:35:58]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 13:35:58]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 13:35:58]  len(irradiance_orig): 1650 
+[2022-08-11 13:35:58]  len(dataset.values) 1650 
+[2022-08-11 13:35:58]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 13:35:58]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 13:35:58]  Loading model file: models\tsinet_model.sav 
+[2022-08-11 13:35:58]  Check if file exists: models\tsinet_model.sav : False 
+[2022-08-11 13:35:58]  Check if file exists: default_model\tsinet_model.sav : True 
+[2022-08-11 13:35:58]  Model was not found, trying the default model 
+[2022-08-11 13:35:58]  Reconstruction will be performed using the model file: default_model\tsinet_model.sav 
+[2022-08-11 13:57:07]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 13:57:07]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 13:57:07]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 13:57:07]  len(dataset.values) 1650 
+[2022-08-11 13:57:07]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 13:57:08]  Removing std_dev_measurement_date (days) 
+[2022-08-11 13:57:08]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 13:57:08]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 13:57:08]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 13:57:08]  Removing std_dev_measurement_date (days) 
+[2022-08-11 13:57:08]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 13:57:08]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 13:57:08]  len(irradiance_orig): 1650 
+[2022-08-11 13:57:08]  len(dataset.values) 1650 
+[2022-08-11 13:57:08]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 13:57:08]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 13:57:08]  Loading model file: models\tsinet_model 
+[2022-08-11 13:57:08]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 13:57:08]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:04:04]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:04:04]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:04:04]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:04:04]  len(dataset.values) 1650 
+[2022-08-11 14:04:04]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:04:04]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:04:04]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:04:04]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:04:04]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:04:04]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:04:04]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:04:04]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:04:04]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:04:04]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:04:05]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:04:05]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:04:05]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:04:05]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:04:05]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:04:05]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:04:05]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:04:05]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:04:05]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:04:05]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:04:05]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:04:05]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:04:05]  required file does not exist: models/irradiance_max_min.txt , using default model file: default_model/irradiance_max_min.txt 
+[2022-08-11 14:04:05]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:04:05]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:04:05]  len(irradiance_orig): 1650 
+[2022-08-11 14:04:05]  len(dataset.values) 1650 
+[2022-08-11 14:04:05]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:04:05]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:04:05]  Loading model file: models\tsinet_model 
+[2022-08-11 14:04:05]  Check if file exists: models\tsinet_model : False 
+[2022-08-11 14:04:05]  Check if file exists: default_model\tsinet_model : True 
+[2022-08-11 14:04:05]  Model was not found, trying the default model 
+[2022-08-11 14:04:05]  Reconstruction will be performed using the model file: default_model\tsinet_model 
+[2022-08-11 14:10:56]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:10:56]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:10:56]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:10:56]  len(dataset.values) 1650 
+[2022-08-11 14:10:56]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:10:56]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:10:56]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:10:56]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:10:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:10:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:10:57]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:10:57]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:10:57]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:10:57]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:10:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:10:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:10:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:10:57]  required file does not exist: models/irradiance_max_min.txt , using default model file: default_model/irradiance_max_min.txt 
+[2022-08-11 14:12:11]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:12:11]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:12:11]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:12:11]  len(dataset.values) 1650 
+[2022-08-11 14:12:11]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:12:11]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:12:11]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:12:11]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:12:11]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:12:11]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:12:11]  required file does not exist: models/irradiance_max_min.txt , using default model file: default_model/irradiance_max_min.txt 
+[2022-08-11 14:12:28]  args: {'epochs': 20, 'attention_layer': True, 'num_units': 400, 'normalize_data': True, 'verbose': False, 'model_verbose': 2} 
+[2022-08-11 14:12:28]  data_train_validate_file_name: train_data\SORCE_TSI.csv 
+[2022-08-11 14:12:28]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:12:28]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:12:28]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:12:28]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:12:28]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:12:28]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:12:28]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:12:28]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:12:28]  Removing uncertainty 
+[2022-08-11 14:12:28]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:12:28]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:12:28]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 14:12:28]  Index(['irradiance'], dtype='object') 
+[2022-08-11 14:12:28]  median_irradiance: 1360.8007 
+[2022-08-11 14:12:28]  max_irradiance: 1362.2768 
+[2022-08-11 14:12:28]  min_irradiance: 1357.0238 
+[2022-08-11 14:12:28]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 14:12:28]  Normalizing data... 
+[2022-08-11 14:12:28]  dataset size: 5689 frame_size: 7 
+[2022-08-11 14:12:28]  len(data): 5689 
+[2022-08-11 14:12:29]  dataset_x size: 5682 
+[2022-08-11 14:12:29]  dataset_y size: 5682 
+[2022-08-11 14:12:29]  data_size 5682 
+[2022-08-11 14:12:29]  test data size: 0 
+[2022-08-11 14:12:29]  train data size: 5682 
+[2022-08-11 14:12:29]  test_data starting index: 5682 
+[2022-08-11 14:12:29]  train_x size from split: 5682 
+[2022-08-11 14:12:29]  test_x size from split: 1 
+[2022-08-11 14:12:29]  data_size 5682 
+[2022-08-11 14:12:29]  test data size: 0 
+[2022-08-11 14:12:29]  train data size: 5682 
+[2022-08-11 14:12:29]  test_data starting index: 5682 
+[2022-08-11 14:12:29]  train_y size from split: 5682 
+[2022-08-11 14:12:29]  test_y size from split: 1 
+[2022-08-11 14:12:29]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 14:12:29]  train_x.shape (5682, 7, 1) 
+[2022-08-11 14:12:29]  train_y.shape (5682, 1) 
+[2022-08-11 14:12:29]  test_x (1, 7, 1) 
+[2022-08-11 14:12:29]  test_y (1, 1) 
+[2022-08-11 14:12:29]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 14:12:29]  orig date size:  5689 
+[2022-08-11 14:12:29]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 14:12:29]  train_x.shape (5682, 7, 1) 
+[2022-08-11 14:12:29]  train_y.shape (5682, 1) 
+[2022-08-11 14:12:29]  n_timesteps, n_features, n_outputs 7 1 1 
+[2022-08-11 14:12:29]  train_x.shape inside if cnn (5682, 7, 1) 
+[2022-08-11 14:12:29]  train_y.shape inside if cnn (5682, 1, 1) 
+[2022-08-11 14:12:29]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2022-08-11 14:28:17]  args: {'epochs': 20, 'attention_layer': True, 'num_units': 400, 'normalize_data': True, 'verbose': False, 'model_verbose': 2} 
+[2022-08-11 14:28:17]  data_train_validate_file_name: train_data\SORCE_TSI.csv 
+[2022-08-11 14:28:17]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:28:17]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:28:17]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:28:17]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:28:17]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:28:17]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:28:17]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:28:17]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:28:17]  Removing uncertainty 
+[2022-08-11 14:28:17]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:28:17]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:28:17]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 14:28:17]  Index(['irradiance'], dtype='object') 
+[2022-08-11 14:28:18]  median_irradiance: 1360.8007 
+[2022-08-11 14:28:18]  max_irradiance: 1362.2768 
+[2022-08-11 14:28:18]  min_irradiance: 1357.0238 
+[2022-08-11 14:28:18]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 14:28:18]  Normalizing data... 
+[2022-08-11 14:28:18]  dataset size: 5689 frame_size: 7 
+[2022-08-11 14:28:18]  len(data): 5689 
+[2022-08-11 14:28:18]  dataset_x size: 5682 
+[2022-08-11 14:28:18]  dataset_y size: 5682 
+[2022-08-11 14:28:18]  data_size 5682 
+[2022-08-11 14:28:18]  test data size: 0 
+[2022-08-11 14:28:18]  train data size: 5682 
+[2022-08-11 14:28:18]  test_data starting index: 5682 
+[2022-08-11 14:28:18]  train_x size from split: 5682 
+[2022-08-11 14:28:18]  test_x size from split: 1 
+[2022-08-11 14:28:18]  data_size 5682 
+[2022-08-11 14:28:18]  test data size: 0 
+[2022-08-11 14:28:18]  train data size: 5682 
+[2022-08-11 14:28:18]  test_data starting index: 5682 
+[2022-08-11 14:28:18]  train_y size from split: 5682 
+[2022-08-11 14:28:18]  test_y size from split: 1 
+[2022-08-11 14:28:18]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 14:28:18]  train_x.shape (5682, 7, 1) 
+[2022-08-11 14:28:18]  train_y.shape (5682, 1) 
+[2022-08-11 14:28:19]  test_x (1, 7, 1) 
+[2022-08-11 14:28:19]  test_y (1, 1) 
+[2022-08-11 14:28:19]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 14:28:19]  orig date size:  5689 
+[2022-08-11 14:28:19]  Time taken to load and prepare data: 1 second(s) 
+[2022-08-11 14:28:19]  train_x.shape (5682, 7, 1) 
+[2022-08-11 14:28:19]  train_y.shape (5682, 1) 
+[2022-08-11 14:28:19]  n_timesteps, n_features, n_outputs 7 1 1 
+[2022-08-11 14:28:20]  train_x.shape inside if cnn (5682, 7, 1) 
+[2022-08-11 14:28:20]  train_y.shape inside if cnn (5682, 1, 1) 
+[2022-08-11 14:28:20]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2022-08-11 14:28:20]  Adding the attention layer... 
+[2022-08-11 14:28:21]  model.summary 
+[2022-08-11 14:28:21]  model verbose: 2 
+[2022-08-11 14:28:44]  saving the TSInet model 
+[2022-08-11 14:28:44]  saving model with save function to file:  models\tsinet_model 
+[2022-08-11 14:28:49]  model_type: tsinet data_name: train_x 
+[2022-08-11 14:28:49]  saving model training data with pickle None  to file:  models\tsinet_train_x.sav 
+[2022-08-11 14:28:49]  model_type: tsinet data_name: train_y 
+[2022-08-11 14:28:49]  saving model training data with pickle None  to file:  models\tsinet_train_y.sav 
+[2022-08-11 14:28:49]  Finished TSInet training... 
+[2022-08-11 14:43:42]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:43:42]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:43:42]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:43:42]  len(dataset.values) 1650 
+[2022-08-11 14:43:42]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:43:42]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:43:42]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:43:42]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:43:42]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:43:42]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:43:42]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:43:42]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:43:42]  len(irradiance_orig): 1650 
+[2022-08-11 14:43:42]  len(dataset.values) 1650 
+[2022-08-11 14:43:42]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:43:42]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:43:42]  Loading model file: models\tsinet_model 
+[2022-08-11 14:43:42]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 14:43:42]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:44:39]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:44:39]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:44:39]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:44:39]  len(dataset.values) 1650 
+[2022-08-11 14:44:39]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:44:39]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:44:39]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:44:39]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:44:39]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:44:39]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:44:39]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:44:39]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:44:39]  len(irradiance_orig): 1650 
+[2022-08-11 14:44:39]  len(dataset.values) 1650 
+[2022-08-11 14:44:39]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:44:39]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:44:39]  Loading model file: models\tsinet_model 
+[2022-08-11 14:44:39]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 14:44:39]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:45:30]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:45:30]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:45:31]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:45:31]  len(dataset.values) 1650 
+[2022-08-11 14:45:31]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:45:31]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:45:31]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:45:31]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:45:31]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:45:31]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:45:31]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:45:31]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:45:31]  len(irradiance_orig): 1650 
+[2022-08-11 14:45:31]  len(dataset.values) 1650 
+[2022-08-11 14:45:31]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:45:31]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:45:31]  Loading model file: models\tsinet_model 
+[2022-08-11 14:45:31]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 14:45:31]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:47:03]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:47:03]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:47:03]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:47:03]  len(dataset.values) 1650 
+[2022-08-11 14:47:03]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:47:03]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:47:03]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:47:03]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:47:03]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:47:03]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:47:03]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:47:03]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:47:03]  len(irradiance_orig): 1650 
+[2022-08-11 14:47:03]  len(dataset.values) 1650 
+[2022-08-11 14:47:03]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:47:03]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:47:03]  Loading model file: models\tsinet_model 
+[2022-08-11 14:47:03]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 14:47:03]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:47:08]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 14:47:08]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000019F116173D0> 
+[2022-08-11 14:47:08]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 14:47:08]  input_x.shape: (1, 7, 1) 
+[2022-08-11 14:47:08]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 14:47:08]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 14:47:08]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 14:47:08]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 14:47:08]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 14:47:08]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 14:47:09]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 14:47:09]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 14:47:09]  Processing with k steps = 5 
+[2022-08-11 14:47:09]  Working on  5 of 30 
+[2022-08-11 14:47:09]  Re-Fitting models... 
+[2022-08-11 14:47:14]  Working on  10 of 30 
+[2022-08-11 14:47:14]  Re-Fitting models... 
+[2022-08-11 14:47:17]  Working on  15 of 30 
+[2022-08-11 14:47:17]  Re-Fitting models... 
+[2022-08-11 14:47:21]  Working on  20 of 30 
+[2022-08-11 14:47:21]  Re-Fitting models... 
+[2022-08-11 14:47:24]  Working on  25 of 30 
+[2022-08-11 14:47:24]  Re-Fitting models... 
+[2022-08-11 14:47:27]  Working on  30 of 30 
+[2022-08-11 14:47:27]  len(build_predictions): 36 
+[2022-08-11 14:50:38]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 14:50:38]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:50:38]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 14:50:38]  len(dataset.values) 1650 
+[2022-08-11 14:50:38]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:50:38]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:50:38]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 14:50:38]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 14:50:38]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 14:50:38]  Removing std_dev_measurement_date (days) 
+[2022-08-11 14:50:38]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:50:38]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 14:50:38]  len(irradiance_orig): 1650 
+[2022-08-11 14:50:38]  len(dataset.values) 1650 
+[2022-08-11 14:50:38]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 14:50:38]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 14:50:38]  Loading model file: models\tsinet_model 
+[2022-08-11 14:50:38]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 14:50:38]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 14:50:44]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 14:50:44]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x00000149116053D0> 
+[2022-08-11 14:50:44]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 14:50:44]  input_x.shape: (1, 7, 1) 
+[2022-08-11 14:50:44]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 14:50:44]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 14:50:44]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 14:50:44]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 14:50:44]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 14:50:44]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 14:50:44]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 14:50:44]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 14:50:44]  Processing with k steps = 5 
+[2022-08-11 14:50:44]  Working on  5 of 30 
+[2022-08-11 14:50:44]  Re-Fitting models... 
+[2022-08-11 14:50:49]  Working on  10 of 30 
+[2022-08-11 14:50:49]  Re-Fitting models... 
+[2022-08-11 14:50:53]  Working on  15 of 30 
+[2022-08-11 14:50:53]  Re-Fitting models... 
+[2022-08-11 14:50:56]  Working on  20 of 30 
+[2022-08-11 14:50:56]  Re-Fitting models... 
+[2022-08-11 14:50:59]  Working on  25 of 30 
+[2022-08-11 14:50:59]  Re-Fitting models... 
+[2022-08-11 14:51:03]  Working on  30 of 30 
+[2022-08-11 14:51:03]  len(build_predictions): 36 
+[2022-08-11 14:51:03]  Total time: 24565 
+[2022-08-11 15:08:40]  args: {'dataset_name': 'TC', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 15:08:52]  args: {'dataset_name': 'TCTE', 'result_file_name': None, 'epochs': 10, 'number_of_days': 30, 'k_steps': 5, 'verbose': False} 
+[2022-08-11 15:08:52]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 15:08:52]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 15:08:52]  len(dataset.values) 1650 
+[2022-08-11 15:08:52]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 15:08:52]  Removing std_dev_measurement_date (days) 
+[2022-08-11 15:08:52]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 15:08:52]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 15:08:52]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 15:08:52]  Removing std_dev_measurement_date (days) 
+[2022-08-11 15:08:52]  required file does not exist: models/irradiance_max_min.txt , using default model file: default_model/irradiance_max_min.txt 
+[2022-08-11 15:08:52]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 15:08:52]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 15:08:52]  len(irradiance_orig): 1650 
+[2022-08-11 15:08:52]  len(dataset.values) 1650 
+[2022-08-11 15:08:52]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 15:08:52]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 15:08:52]  Loading model file: models\tsinet_model 
+[2022-08-11 15:08:52]  Check if file exists: models\tsinet_model : False 
+[2022-08-11 15:08:52]  Check if file exists: default_model\tsinet_model : True 
+[2022-08-11 15:08:52]  Model was not found, trying the default model 
+[2022-08-11 15:08:52]  Reconstruction will be performed using the model file: default_model\tsinet_model 
+[2022-08-11 15:08:57]  Returning loaded model from file: default_model\tsinet_model 
+[2022-08-11 15:08:57]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000023A1588D400> 
+[2022-08-11 15:08:57]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 15:08:57]  input_x.shape: (1, 7, 1) 
+[2022-08-11 15:08:58]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 15:08:58]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:08:58]  loading model objects with pickle None  from file:  default_model/tsinet_train_x.sav 
+[2022-08-11 15:08:58]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 15:08:58]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:08:58]  loading model objects with pickle None  from file:  default_model/tsinet_train_y.sav 
+[2022-08-11 15:08:58]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 15:08:58]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:08:58]  loading model objects with pickle None  from file:  default_model/tsinet_train_x.sav 
+[2022-08-11 15:08:58]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 15:08:58]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:08:58]  loading model objects with pickle None  from file:  default_model/tsinet_train_y.sav 
+[2022-08-11 15:08:58]  Processing with k steps = 5 
+[2022-08-11 15:08:58]  Working on  5 of 30 
+[2022-08-11 15:08:58]  Re-Fitting models... 
+[2022-08-11 15:09:03]  Working on  10 of 30 
+[2022-08-11 15:09:03]  Re-Fitting models... 
+[2022-08-11 15:09:06]  Working on  15 of 30 
+[2022-08-11 15:09:06]  Re-Fitting models... 
+[2022-08-11 15:09:10]  Working on  20 of 30 
+[2022-08-11 15:09:10]  Re-Fitting models... 
+[2022-08-11 15:09:13]  Working on  25 of 30 
+[2022-08-11 15:09:13]  Re-Fitting models... 
+[2022-08-11 15:09:16]  Working on  30 of 30 
+[2022-08-11 15:09:16]  len(build_predictions): 36 
+[2022-08-11 15:09:16]  Total time: 24462 
+[2022-08-11 15:30:00]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 15:30:00]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 15:30:00]  len(dataset.values) 1650 
+[2022-08-11 15:30:00]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 15:30:00]  Removing std_dev_measurement_date (days) 
+[2022-08-11 15:30:00]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 15:30:00]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 15:30:00]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 15:30:00]  Removing std_dev_measurement_date (days) 
+[2022-08-11 15:30:00]  required file does not exist: models/irradiance_max_min.txt , using default model file: default_model/irradiance_max_min.txt 
+[2022-08-11 15:30:00]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 15:30:00]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 15:30:00]  len(irradiance_orig): 1650 
+[2022-08-11 15:30:00]  len(dataset.values) 1650 
+[2022-08-11 15:30:00]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 15:30:00]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 15:30:00]  Loading model file: models\tsinet_model 
+[2022-08-11 15:30:00]  Check if file exists: models\tsinet_model : False 
+[2022-08-11 15:30:00]  Check if file exists: default_model\tsinet_model : True 
+[2022-08-11 15:30:00]  Model was not found, trying the default model 
+[2022-08-11 15:30:00]  Reconstruction will be performed using the model file: default_model\tsinet_model 
+[2022-08-11 15:30:05]  Returning loaded model from file: default_model\tsinet_model 
+[2022-08-11 15:30:05]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x00000167199E5760> 
+[2022-08-11 15:30:05]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 15:30:05]  input_x.shape: (1, 7, 1) 
+[2022-08-11 15:30:06]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 15:30:06]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:30:06]  loading model objects with pickle None  from file:  default_model/tsinet_train_x.sav 
+[2022-08-11 15:30:06]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 15:30:06]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:30:06]  loading model objects with pickle None  from file:  default_model/tsinet_train_y.sav 
+[2022-08-11 15:30:06]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 15:30:06]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:30:06]  loading model objects with pickle None  from file:  default_model/tsinet_train_x.sav 
+[2022-08-11 15:30:06]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 15:30:06]  Model and or its objects are not found, trying the default model.. 
+[2022-08-11 15:30:06]  loading model objects with pickle None  from file:  default_model/tsinet_train_y.sav 
+[2022-08-11 15:30:06]  Processing with k steps = 5 
+[2022-08-11 15:30:06]  Working on  5 of 30 
+[2022-08-11 15:30:06]  Re-Fitting models... 
+[2022-08-11 15:30:11]  Working on  10 of 30 
+[2022-08-11 15:30:11]  Re-Fitting models... 
+[2022-08-11 15:30:14]  Working on  15 of 30 
+[2022-08-11 15:30:14]  Re-Fitting models... 
+[2022-08-11 15:30:17]  Working on  20 of 30 
+[2022-08-11 15:30:17]  Re-Fitting models... 
+[2022-08-11 15:30:21]  Working on  25 of 30 
+[2022-08-11 15:30:21]  Re-Fitting models... 
+[2022-08-11 15:30:24]  Working on  30 of 30 
+[2022-08-11 15:30:24]  len(build_predictions): 36 
+[2022-08-11 15:30:24]  Total time: 24110 
+[2022-08-11 16:34:48]  data_train_validate_file_name: train_data\SORCE_TSI.csv 
+[2022-08-11 16:34:49]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:34:49]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:34:49]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:34:49]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:34:49]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:34:49]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:34:49]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:34:49]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:34:49]  Removing uncertainty 
+[2022-08-11 16:34:49]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:34:49]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:34:49]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 16:34:49]  Index(['irradiance'], dtype='object') 
+[2022-08-11 16:34:49]  median_irradiance: 1360.8007 
+[2022-08-11 16:34:49]  max_irradiance: 1362.2768 
+[2022-08-11 16:34:49]  min_irradiance: 1357.0238 
+[2022-08-11 16:34:49]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 16:34:49]  Normalizing data... 
+[2022-08-11 16:34:49]  dataset size: 5689 frame_size: 7 
+[2022-08-11 16:34:49]  len(data): 5689 
+[2022-08-11 16:34:49]  dataset_x size: 5682 
+[2022-08-11 16:34:49]  dataset_y size: 5682 
+[2022-08-11 16:34:49]  data_size 5682 
+[2022-08-11 16:34:49]  test data size: 0 
+[2022-08-11 16:34:49]  train data size: 5682 
+[2022-08-11 16:34:49]  test_data starting index: 5682 
+[2022-08-11 16:34:49]  train_x size from split: 5682 
+[2022-08-11 16:34:49]  test_x size from split: 1 
+[2022-08-11 16:34:49]  data_size 5682 
+[2022-08-11 16:34:49]  test data size: 0 
+[2022-08-11 16:34:49]  train data size: 5682 
+[2022-08-11 16:34:49]  test_data starting index: 5682 
+[2022-08-11 16:34:49]  train_y size from split: 5682 
+[2022-08-11 16:34:49]  test_y size from split: 1 
+[2022-08-11 16:34:49]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 16:34:49]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:34:49]  train_y.shape (5682, 1) 
+[2022-08-11 16:34:49]  test_x (1, 7, 1) 
+[2022-08-11 16:34:49]  test_y (1, 1) 
+[2022-08-11 16:34:49]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 16:34:49]  orig date size:  5689 
+[2022-08-11 16:34:49]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 16:35:36]  data_train_validate_file_name: train_data\SORCE_TSI.csv 
+[2022-08-11 16:35:36]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:35:36]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:35:36]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:35:36]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:35:36]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:35:36]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:35:36]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:35:36]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:35:36]  Removing uncertainty 
+[2022-08-11 16:35:36]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:35:36]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:35:36]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 16:35:36]  Index(['irradiance'], dtype='object') 
+[2022-08-11 16:35:36]  median_irradiance: 1360.8007 
+[2022-08-11 16:35:36]  max_irradiance: 1362.2768 
+[2022-08-11 16:35:36]  min_irradiance: 1357.0238 
+[2022-08-11 16:35:36]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 16:35:36]  Normalizing data... 
+[2022-08-11 16:35:36]  dataset size: 5689 frame_size: 7 
+[2022-08-11 16:35:36]  len(data): 5689 
+[2022-08-11 16:35:37]  dataset_x size: 5682 
+[2022-08-11 16:35:37]  dataset_y size: 5682 
+[2022-08-11 16:35:37]  data_size 5682 
+[2022-08-11 16:35:37]  test data size: 0 
+[2022-08-11 16:35:37]  train data size: 5682 
+[2022-08-11 16:35:37]  test_data starting index: 5682 
+[2022-08-11 16:35:37]  train_x size from split: 5682 
+[2022-08-11 16:35:37]  test_x size from split: 1 
+[2022-08-11 16:35:37]  data_size 5682 
+[2022-08-11 16:35:37]  test data size: 0 
+[2022-08-11 16:35:37]  train data size: 5682 
+[2022-08-11 16:35:37]  test_data starting index: 5682 
+[2022-08-11 16:35:37]  train_y size from split: 5682 
+[2022-08-11 16:35:37]  test_y size from split: 1 
+[2022-08-11 16:35:37]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 16:35:37]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:35:37]  train_y.shape (5682, 1) 
+[2022-08-11 16:35:37]  test_x (1, 7, 1) 
+[2022-08-11 16:35:37]  test_y (1, 1) 
+[2022-08-11 16:35:37]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 16:35:37]  orig date size:  5689 
+[2022-08-11 16:35:37]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 16:36:41]  data_train_validate_file_name: train_data\SORCE_TSI.csv 
+[2022-08-11 16:36:41]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:36:41]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:36:41]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:36:41]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:36:41]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:36:41]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:36:41]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:36:41]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:36:41]  Removing uncertainty 
+[2022-08-11 16:36:41]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:36:41]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:36:41]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 16:36:41]  Index(['irradiance'], dtype='object') 
+[2022-08-11 16:36:41]  median_irradiance: 1360.8007 
+[2022-08-11 16:36:41]  max_irradiance: 1362.2768 
+[2022-08-11 16:36:41]  min_irradiance: 1357.0238 
+[2022-08-11 16:36:41]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 16:36:41]  Normalizing data... 
+[2022-08-11 16:36:41]  dataset size: 5689 frame_size: 7 
+[2022-08-11 16:36:41]  len(data): 5689 
+[2022-08-11 16:36:41]  dataset_x size: 5682 
+[2022-08-11 16:36:41]  dataset_y size: 5682 
+[2022-08-11 16:36:41]  data_size 5682 
+[2022-08-11 16:36:41]  test data size: 0 
+[2022-08-11 16:36:41]  train data size: 5682 
+[2022-08-11 16:36:41]  test_data starting index: 5682 
+[2022-08-11 16:36:41]  train_x size from split: 5682 
+[2022-08-11 16:36:41]  test_x size from split: 1 
+[2022-08-11 16:36:41]  data_size 5682 
+[2022-08-11 16:36:41]  test data size: 0 
+[2022-08-11 16:36:41]  train data size: 5682 
+[2022-08-11 16:36:41]  test_data starting index: 5682 
+[2022-08-11 16:36:41]  train_y size from split: 5682 
+[2022-08-11 16:36:41]  test_y size from split: 1 
+[2022-08-11 16:36:41]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 16:36:41]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:36:41]  train_y.shape (5682, 1) 
+[2022-08-11 16:36:41]  test_x (1, 7, 1) 
+[2022-08-11 16:36:41]  test_y (1, 1) 
+[2022-08-11 16:36:41]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 16:36:41]  orig date size:  5689 
+[2022-08-11 16:36:41]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 16:36:41]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:36:41]  train_y.shape (5682, 1) 
+[2022-08-11 16:36:41]  n_timesteps, n_features, n_outputs 7 1 1 
+[2022-08-11 16:36:41]  train_x.shape inside if cnn (5682, 7, 1) 
+[2022-08-11 16:36:41]  train_y.shape inside if cnn (5682, 1, 1) 
+[2022-08-11 16:36:41]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2022-08-11 16:36:41]  Adding the attention layer... 
+[2022-08-11 16:36:42]  model.summary 
+[2022-08-11 16:36:42]  model verbose: 1 
+[2022-08-11 16:37:05]  saving the TSInet model 
+[2022-08-11 16:37:05]  saving model with save function to file:  models\tsinet_model 
+[2022-08-11 16:37:11]  model_type: tsinet data_name: train_x 
+[2022-08-11 16:37:11]  saving model training data with pickle None  to file:  models\tsinet_train_x.sav 
+[2022-08-11 16:37:11]  model_type: tsinet data_name: train_y 
+[2022-08-11 16:37:11]  saving model training data with pickle None  to file:  models\tsinet_train_y.sav 
+[2022-08-11 16:37:11]  Finished TSInet training... 
+[2022-08-11 16:45:01]  data_train_validate_file_name: train_data/SORCE_TSI.csv 
+[2022-08-11 16:45:02]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:45:02]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:45:02]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:45:02]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:45:02]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:45:02]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:45:02]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:45:02]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:45:02]  Removing uncertainty 
+[2022-08-11 16:45:02]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:45:02]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:45:02]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 16:45:02]  Index(['irradiance'], dtype='object') 
+[2022-08-11 16:45:02]  median_irradiance: 1360.8007 
+[2022-08-11 16:45:02]  max_irradiance: 1362.2768 
+[2022-08-11 16:45:02]  min_irradiance: 1357.0238 
+[2022-08-11 16:45:02]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 16:45:02]  Normalizing data... 
+[2022-08-11 16:45:02]  dataset size: 5689 frame_size: 7 
+[2022-08-11 16:45:02]  len(data): 5689 
+[2022-08-11 16:45:02]  dataset_x size: 5682 
+[2022-08-11 16:45:02]  dataset_y size: 5682 
+[2022-08-11 16:45:02]  data_size 5682 
+[2022-08-11 16:45:02]  test data size: 0 
+[2022-08-11 16:45:02]  train data size: 5682 
+[2022-08-11 16:45:02]  test_data starting index: 5682 
+[2022-08-11 16:45:02]  train_x size from split: 5682 
+[2022-08-11 16:45:02]  test_x size from split: 1 
+[2022-08-11 16:45:02]  data_size 5682 
+[2022-08-11 16:45:02]  test data size: 0 
+[2022-08-11 16:45:02]  train data size: 5682 
+[2022-08-11 16:45:02]  test_data starting index: 5682 
+[2022-08-11 16:45:02]  train_y size from split: 5682 
+[2022-08-11 16:45:02]  test_y size from split: 1 
+[2022-08-11 16:45:02]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 16:45:02]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:45:02]  train_y.shape (5682, 1) 
+[2022-08-11 16:45:02]  test_x (1, 7, 1) 
+[2022-08-11 16:45:02]  test_y (1, 1) 
+[2022-08-11 16:45:02]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 16:45:02]  orig date size:  5689 
+[2022-08-11 16:45:02]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 16:45:02]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:45:02]  train_y.shape (5682, 1) 
+[2022-08-11 16:45:02]  n_timesteps, n_features, n_outputs 7 1 1 
+[2022-08-11 16:45:02]  train_x.shape inside if cnn (5682, 7, 1) 
+[2022-08-11 16:45:02]  train_y.shape inside if cnn (5682, 1, 1) 
+[2022-08-11 16:45:02]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2022-08-11 16:45:02]  Adding the attention layer... 
+[2022-08-11 16:45:03]  model.summary 
+[2022-08-11 16:45:03]  model verbose: 1 
+[2022-08-11 16:45:45]  data_train_validate_file_name: train_data/SORCE_TSI.csv 
+[2022-08-11 16:45:45]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:45:45]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:45:45]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:45:45]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:45:45]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:45:45]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:45:45]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:45:45]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:45:45]  Removing uncertainty 
+[2022-08-11 16:45:45]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:45:45]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:45:45]  columns: Index(['irradiance'], dtype='object') 
+[2022-08-11 16:45:45]  Index(['irradiance'], dtype='object') 
+[2022-08-11 16:45:45]  median_irradiance: 1360.8007 
+[2022-08-11 16:45:45]  max_irradiance: 1362.2768 
+[2022-08-11 16:45:45]  min_irradiance: 1357.0238 
+[2022-08-11 16:45:45]  subtract_irradiance_value: 1357.0238 
+[2022-08-11 16:45:45]  Normalizing data... 
+[2022-08-11 16:45:45]  dataset size: 5689 frame_size: 7 
+[2022-08-11 16:45:45]  len(data): 5689 
+[2022-08-11 16:45:45]  dataset_x size: 5682 
+[2022-08-11 16:45:45]  dataset_y size: 5682 
+[2022-08-11 16:45:45]  data_size 5682 
+[2022-08-11 16:45:45]  test data size: 0 
+[2022-08-11 16:45:45]  train data size: 5682 
+[2022-08-11 16:45:45]  test_data starting index: 5682 
+[2022-08-11 16:45:45]  train_x size from split: 5682 
+[2022-08-11 16:45:45]  test_x size from split: 1 
+[2022-08-11 16:45:45]  data_size 5682 
+[2022-08-11 16:45:45]  test data size: 0 
+[2022-08-11 16:45:45]  train data size: 5682 
+[2022-08-11 16:45:45]  test_data starting index: 5682 
+[2022-08-11 16:45:45]  train_y size from split: 5682 
+[2022-08-11 16:45:45]  test_y size from split: 1 
+[2022-08-11 16:45:45]  type of train_y: <class 'numpy.ndarray'> 
+[2022-08-11 16:45:45]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:45:45]  train_y.shape (5682, 1) 
+[2022-08-11 16:45:45]  test_x (1, 7, 1) 
+[2022-08-11 16:45:45]  test_y (1, 1) 
+[2022-08-11 16:45:45]  train_y[0:1] [[0.69255663]] 
+[2022-08-11 16:45:45]  orig date size:  5689 
+[2022-08-11 16:45:45]  Time taken to load and prepare data: 0 second(s) 
+[2022-08-11 16:45:45]  train_x.shape (5682, 7, 1) 
+[2022-08-11 16:45:45]  train_y.shape (5682, 1) 
+[2022-08-11 16:45:45]  n_timesteps, n_features, n_outputs 7 1 1 
+[2022-08-11 16:45:45]  train_x.shape inside if cnn (5682, 7, 1) 
+[2022-08-11 16:45:45]  train_y.shape inside if cnn (5682, 1, 1) 
+[2022-08-11 16:45:45]  input_shape=(n_timesteps,n_features): (7, 1) 
+[2022-08-11 16:45:45]  Adding the attention layer... 
+[2022-08-11 16:45:46]  model.summary 
+[2022-08-11 16:45:46]  model verbose: 1 
+[2022-08-11 16:45:57]  saving the TSInet model 
+[2022-08-11 16:45:57]  saving model with save function to file:  models\tsinet_model 
+[2022-08-11 16:46:03]  model_type: tsinet data_name: train_x 
+[2022-08-11 16:46:03]  saving model training data with pickle None  to file:  models\tsinet_train_x.sav 
+[2022-08-11 16:46:03]  model_type: tsinet data_name: train_y 
+[2022-08-11 16:46:03]  saving model training data with pickle None  to file:  models\tsinet_train_y.sav 
+[2022-08-11 16:46:03]  Finished TSInet training... 
+[2022-08-11 16:50:36]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:50:36]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:50:36]  len(dataset.values) 1650 
+[2022-08-11 16:50:36]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:50:36]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:50:36]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:50:36]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:50:36]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:50:36]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:50:36]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:50:36]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:50:36]  len(irradiance_orig): 1650 
+[2022-08-11 16:50:36]  len(dataset.values) 1650 
+[2022-08-11 16:50:36]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:50:36]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:50:36]  Loading model file: models\tsinet_model 
+[2022-08-11 16:50:36]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:50:36]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:50:41]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:50:41]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x000001AD1B99C970> 
+[2022-08-11 16:50:41]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:50:41]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:51:33]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:51:33]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:51:33]  len(dataset.values) 1650 
+[2022-08-11 16:51:33]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:51:33]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:51:33]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:51:33]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:51:33]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:51:33]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:51:33]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:51:33]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:51:33]  len(irradiance_orig): 1650 
+[2022-08-11 16:51:33]  len(dataset.values) 1650 
+[2022-08-11 16:51:33]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:51:33]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:51:33]  Loading model file: models\tsinet_model 
+[2022-08-11 16:51:33]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:51:33]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:51:39]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:51:39]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x00000176170BBD90> 
+[2022-08-11 16:51:39]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:51:39]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:51:39]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:51:39]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:51:39]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:51:39]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:51:39]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:51:39]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:51:39]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:51:39]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:51:39]  Processing with k steps = 5 
+[2022-08-11 16:51:39]  Working on  5 of 30 
+[2022-08-11 16:51:39]  Re-Fitting models... 
+[2022-08-11 16:51:44]  Working on  10 of 30 
+[2022-08-11 16:51:44]  Re-Fitting models... 
+[2022-08-11 16:51:47]  Working on  15 of 30 
+[2022-08-11 16:51:47]  Re-Fitting models... 
+[2022-08-11 16:51:51]  Working on  20 of 30 
+[2022-08-11 16:51:51]  Re-Fitting models... 
+[2022-08-11 16:51:54]  Working on  25 of 30 
+[2022-08-11 16:51:54]  Re-Fitting models... 
+[2022-08-11 16:51:57]  Working on  30 of 30 
+[2022-08-11 16:51:57]  len(build_predictions): 36 
+[2022-08-11 16:51:57]  Total time: 23991 
+[2022-08-11 16:52:42]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:52:42]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:52:42]  len(dataset.values) 1650 
+[2022-08-11 16:52:42]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:52:42]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:52:42]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:52:42]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:52:42]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:52:42]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:52:42]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:52:42]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:52:42]  len(irradiance_orig): 1650 
+[2022-08-11 16:52:42]  len(dataset.values) 1650 
+[2022-08-11 16:52:42]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:52:42]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:52:42]  Loading model file: models\tsinet_model 
+[2022-08-11 16:52:42]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:52:42]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:52:48]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:52:48]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000024F949B9D90> 
+[2022-08-11 16:52:48]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:52:48]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:52:48]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:52:48]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:52:48]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:52:48]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:52:48]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:52:48]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:52:48]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:52:48]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:52:48]  Processing with k steps = 5 
+[2022-08-11 16:52:48]  Working on  5 of 30 
+[2022-08-11 16:52:48]  Re-Fitting models... 
+[2022-08-11 16:52:53]  Working on  10 of 30 
+[2022-08-11 16:52:53]  Re-Fitting models... 
+[2022-08-11 16:52:56]  Working on  15 of 30 
+[2022-08-11 16:52:56]  Re-Fitting models... 
+[2022-08-11 16:53:00]  Working on  20 of 30 
+[2022-08-11 16:53:00]  Re-Fitting models... 
+[2022-08-11 16:53:03]  Working on  25 of 30 
+[2022-08-11 16:53:03]  Re-Fitting models... 
+[2022-08-11 16:53:06]  Working on  30 of 30 
+[2022-08-11 16:53:06]  len(build_predictions): 36 
+[2022-08-11 16:53:06]  Total time: 24472 
+[2022-08-11 16:54:34]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:54:34]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:54:34]  len(dataset.values) 1650 
+[2022-08-11 16:54:34]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:54:34]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:54:34]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:54:34]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:54:34]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:54:34]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:54:34]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:54:34]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:54:34]  len(irradiance_orig): 1650 
+[2022-08-11 16:54:34]  len(dataset.values) 1650 
+[2022-08-11 16:54:34]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:54:34]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:54:34]  Loading model file: models\tsinet_model 
+[2022-08-11 16:54:34]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:54:34]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:54:40]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:54:40]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x000001989861AD90> 
+[2022-08-11 16:54:40]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:54:40]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:54:40]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:54:40]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:54:40]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:54:40]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:54:40]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:54:40]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:54:40]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:54:40]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:54:40]  Processing with k steps = 5 
+[2022-08-11 16:54:40]  Working on  5 of 30 
+[2022-08-11 16:54:40]  Re-Fitting models... 
+[2022-08-11 16:54:45]  Working on  10 of 30 
+[2022-08-11 16:54:45]  Re-Fitting models... 
+[2022-08-11 16:54:48]  Working on  15 of 30 
+[2022-08-11 16:54:48]  Re-Fitting models... 
+[2022-08-11 16:54:52]  Working on  20 of 30 
+[2022-08-11 16:54:52]  Re-Fitting models... 
+[2022-08-11 16:54:55]  Working on  25 of 30 
+[2022-08-11 16:54:55]  Re-Fitting models... 
+[2022-08-11 16:54:58]  Working on  30 of 30 
+[2022-08-11 16:54:58]  len(build_predictions): 36 
+[2022-08-11 16:54:58]  Total time: 24187 
+[2022-08-11 16:55:25]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:55:25]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:55:25]  len(dataset.values) 1650 
+[2022-08-11 16:55:25]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:55:25]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:55:25]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:55:25]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:55:25]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:55:25]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:55:25]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:55:25]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:55:25]  len(irradiance_orig): 1650 
+[2022-08-11 16:55:25]  len(dataset.values) 1650 
+[2022-08-11 16:55:25]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:55:25]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:55:25]  Loading model file: models\tsinet_model 
+[2022-08-11 16:55:25]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:55:25]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:55:30]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:55:30]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000028718839D90> 
+[2022-08-11 16:55:30]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:55:30]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:55:31]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:55:31]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:55:31]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:55:31]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:55:31]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:55:31]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:55:31]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:55:31]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:55:31]  Processing with k steps = 5 
+[2022-08-11 16:55:31]  Working on  5 of 30 
+[2022-08-11 16:55:31]  Re-Fitting models... 
+[2022-08-11 16:55:36]  Working on  10 of 30 
+[2022-08-11 16:55:36]  Re-Fitting models... 
+[2022-08-11 16:55:39]  Working on  15 of 30 
+[2022-08-11 16:55:39]  Re-Fitting models... 
+[2022-08-11 16:55:42]  Working on  20 of 30 
+[2022-08-11 16:55:42]  Re-Fitting models... 
+[2022-08-11 16:55:45]  Working on  25 of 30 
+[2022-08-11 16:55:46]  Re-Fitting models... 
+[2022-08-11 16:55:49]  Working on  30 of 30 
+[2022-08-11 16:55:49]  len(build_predictions): 36 
+[2022-08-11 16:55:49]  Total time: 24340 
+[2022-08-11 16:56:30]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:56:30]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:56:30]  len(dataset.values) 1650 
+[2022-08-11 16:56:30]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:56:30]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:56:31]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:56:31]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:56:31]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:56:31]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:56:31]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:56:31]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:56:31]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:56:31]  len(irradiance_orig): 1650 
+[2022-08-11 16:56:31]  len(dataset.values) 1650 
+[2022-08-11 16:56:31]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:56:31]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:56:31]  Loading model file: models\tsinet_model 
+[2022-08-11 16:56:31]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:56:31]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:56:36]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:56:36]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000028D943D9D90> 
+[2022-08-11 16:56:36]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:56:36]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:56:36]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:56:36]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:56:36]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:56:36]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:56:37]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:56:37]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:56:37]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:56:37]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:56:37]  Processing with k steps = 5 
+[2022-08-11 16:56:37]  Working on  5 of 30 
+[2022-08-11 16:56:37]  Re-Fitting models... 
+[2022-08-11 16:56:41]  Working on  10 of 30 
+[2022-08-11 16:56:41]  Re-Fitting models... 
+[2022-08-11 16:56:45]  Working on  15 of 30 
+[2022-08-11 16:56:45]  Re-Fitting models... 
+[2022-08-11 16:56:48]  Working on  20 of 30 
+[2022-08-11 16:56:48]  Re-Fitting models... 
+[2022-08-11 16:56:51]  Working on  25 of 30 
+[2022-08-11 16:56:51]  Re-Fitting models... 
+[2022-08-11 16:56:55]  Working on  30 of 30 
+[2022-08-11 16:56:55]  len(build_predictions): 36 
+[2022-08-11 16:56:55]  Total time: 24216 
+[2022-08-11 16:57:50]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:57:50]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:57:50]  len(dataset.values) 1650 
+[2022-08-11 16:57:50]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:57:50]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:57:50]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:57:50]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:57:50]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:57:50]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:57:50]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:57:50]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:57:50]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:57:50]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:57:50]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:57:51]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:57:51]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:57:51]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:57:51]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:57:51]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:57:51]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:57:51]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:57:51]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:57:51]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:57:51]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:57:51]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:57:51]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:57:51]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:57:51]  len(irradiance_orig): 1650 
+[2022-08-11 16:57:51]  len(dataset.values) 1650 
+[2022-08-11 16:57:51]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:57:51]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:57:51]  Loading model file: models\tsinet_model 
+[2022-08-11 16:57:51]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:57:51]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 16:57:56]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 16:57:56]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000025196B58D90> 
+[2022-08-11 16:57:56]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 16:57:56]  input_x.shape: (1, 7, 1) 
+[2022-08-11 16:57:56]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:57:56]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:57:56]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:57:56]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:57:56]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 16:57:56]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 16:57:56]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 16:57:56]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 16:57:56]  Processing with k steps = 5 
+[2022-08-11 16:57:56]  Working on  5 of 30 
+[2022-08-11 16:57:57]  Re-Fitting models... 
+[2022-08-11 16:58:01]  Working on  10 of 30 
+[2022-08-11 16:58:01]  Re-Fitting models... 
+[2022-08-11 16:58:05]  Working on  15 of 30 
+[2022-08-11 16:58:05]  Re-Fitting models... 
+[2022-08-11 16:58:08]  Working on  20 of 30 
+[2022-08-11 16:58:08]  Re-Fitting models... 
+[2022-08-11 16:58:11]  Working on  25 of 30 
+[2022-08-11 16:58:11]  Re-Fitting models... 
+[2022-08-11 16:58:14]  Working on  30 of 30 
+[2022-08-11 16:58:14]  len(build_predictions): 36 
+[2022-08-11 16:58:14]  Total time: 24071 
+[2022-08-11 16:59:57]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:59:57]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 16:59:57]  len(dataset.values) 1650 
+[2022-08-11 16:59:57]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:59:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:59:57]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 16:59:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 16:59:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 16:59:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 16:59:57]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:59:57]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 16:59:57]  len(irradiance_orig): 1650 
+[2022-08-11 16:59:57]  len(dataset.values) 1650 
+[2022-08-11 16:59:57]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 16:59:57]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 16:59:57]  Loading model file: models\tsinet_model 
+[2022-08-11 16:59:57]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 16:59:57]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:00:02]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:00:02]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x000001D29415ADC0> 
+[2022-08-11 17:00:02]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:00:02]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:00:03]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:00:03]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:00:03]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:00:03]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:00:03]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:00:03]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:00:03]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:00:03]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:00:03]  Processing with k steps = 5 
+[2022-08-11 17:00:03]  Working on  5 of 30 
+[2022-08-11 17:00:03]  Re-Fitting models... 
+[2022-08-11 17:00:07]  Working on  10 of 30 
+[2022-08-11 17:00:08]  Re-Fitting models... 
+[2022-08-11 17:00:11]  Working on  15 of 30 
+[2022-08-11 17:00:11]  Re-Fitting models... 
+[2022-08-11 17:00:14]  Working on  20 of 30 
+[2022-08-11 17:00:14]  Re-Fitting models... 
+[2022-08-11 17:00:17]  Working on  25 of 30 
+[2022-08-11 17:00:17]  Re-Fitting models... 
+[2022-08-11 17:00:21]  Working on  30 of 30 
+[2022-08-11 17:00:21]  len(build_predictions): 36 
+[2022-08-11 17:00:21]  Total time: 24107 
+[2022-08-11 17:01:28]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:01:28]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:01:28]  len(dataset.values) 1650 
+[2022-08-11 17:01:28]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:01:28]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:01:28]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:01:28]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:01:28]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:01:28]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:01:28]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:01:28]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:01:28]  len(irradiance_orig): 1650 
+[2022-08-11 17:01:28]  len(dataset.values) 1650 
+[2022-08-11 17:01:28]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:01:28]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:01:28]  Loading model file: default_model\tsinet_model 
+[2022-08-11 17:01:28]  Check if file exists: default_model\tsinet_model : True 
+[2022-08-11 17:01:28]  Reconstruction will be performed using the model file: default_model\tsinet_model 
+[2022-08-11 17:01:34]  Returning loaded model from file: default_model\tsinet_model 
+[2022-08-11 17:01:34]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000023C9AA43DF0> 
+[2022-08-11 17:01:34]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:01:34]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:01:34]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:01:34]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:01:34]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:01:34]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:01:34]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:01:34]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:01:34]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:01:34]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:01:34]  Processing with k steps = 5 
+[2022-08-11 17:01:34]  Working on  5 of 30 
+[2022-08-11 17:01:34]  Re-Fitting models... 
+[2022-08-11 17:01:39]  Working on  10 of 30 
+[2022-08-11 17:01:39]  Re-Fitting models... 
+[2022-08-11 17:01:42]  Working on  15 of 30 
+[2022-08-11 17:01:42]  Re-Fitting models... 
+[2022-08-11 17:01:46]  Working on  20 of 30 
+[2022-08-11 17:01:46]  Re-Fitting models... 
+[2022-08-11 17:01:49]  Working on  25 of 30 
+[2022-08-11 17:01:49]  Re-Fitting models... 
+[2022-08-11 17:01:53]  Working on  30 of 30 
+[2022-08-11 17:01:53]  len(build_predictions): 36 
+[2022-08-11 17:01:53]  Total time: 24733 
+[2022-08-11 17:02:08]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:02:08]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:02:08]  len(dataset.values) 1650 
+[2022-08-11 17:02:08]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:02:08]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:02:08]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:02:08]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:02:08]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:02:08]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:02:08]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:02:08]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:02:08]  len(irradiance_orig): 1650 
+[2022-08-11 17:02:08]  len(dataset.values) 1650 
+[2022-08-11 17:02:08]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:02:08]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:02:08]  Loading model file: default_model\tsinet_model 
+[2022-08-11 17:02:08]  Check if file exists: default_model\tsinet_model : True 
+[2022-08-11 17:02:08]  Reconstruction will be performed using the model file: default_model\tsinet_model 
+[2022-08-11 17:02:14]  Returning loaded model from file: default_model\tsinet_model 
+[2022-08-11 17:02:14]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000020D19454DF0> 
+[2022-08-11 17:02:14]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:02:14]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:02:14]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:02:14]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:02:14]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:02:14]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:02:14]  Check model data file: default_model\tsinet_train_x.sav 
+[2022-08-11 17:02:14]  loading model objects with pickle None  from file:  default_model\tsinet_train_x.sav 
+[2022-08-11 17:02:14]  Check model data file: default_model\tsinet_train_y.sav 
+[2022-08-11 17:02:14]  loading model objects with pickle None  from file:  default_model\tsinet_train_y.sav 
+[2022-08-11 17:02:14]  Processing with k steps = 5 
+[2022-08-11 17:02:14]  Working on  5 of 30 
+[2022-08-11 17:02:14]  Re-Fitting models... 
+[2022-08-11 17:02:19]  Working on  10 of 30 
+[2022-08-11 17:02:19]  Re-Fitting models... 
+[2022-08-11 17:02:22]  Working on  15 of 30 
+[2022-08-11 17:02:22]  Re-Fitting models... 
+[2022-08-11 17:02:26]  Working on  20 of 30 
+[2022-08-11 17:02:26]  Re-Fitting models... 
+[2022-08-11 17:02:29]  Working on  25 of 30 
+[2022-08-11 17:02:29]  Re-Fitting models... 
+[2022-08-11 17:02:32]  Working on  30 of 30 
+[2022-08-11 17:02:32]  len(build_predictions): 36 
+[2022-08-11 17:02:32]  Total time: 23855 
+[2022-08-11 17:06:54]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:06:54]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:06:54]  len(dataset.values) 1650 
+[2022-08-11 17:06:54]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:06:54]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:06:54]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:06:54]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:06:54]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:06:54]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:06:54]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:06:55]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:06:55]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:06:55]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:06:55]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:06:55]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:06:55]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:06:55]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:06:55]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:06:55]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:06:55]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:06:55]  len(irradiance_orig): 1650 
+[2022-08-11 17:06:55]  len(dataset.values) 1650 
+[2022-08-11 17:06:55]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:06:55]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:06:55]  Loading model file: models\tsinet_model 
+[2022-08-11 17:06:55]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 17:06:55]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:07:00]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:07:00]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000020D2308CCD0> 
+[2022-08-11 17:07:00]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:07:00]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:07:00]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:07:00]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:07:00]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:07:00]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:07:00]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:07:00]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:07:00]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:07:00]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:07:00]  Processing with k steps = 5 
+[2022-08-11 17:07:00]  Working on  5 of 30 
+[2022-08-11 17:07:00]  Re-Fitting models... 
+[2022-08-11 17:07:05]  Working on  10 of 30 
+[2022-08-11 17:07:05]  Re-Fitting models... 
+[2022-08-11 17:07:09]  Working on  15 of 30 
+[2022-08-11 17:07:09]  Re-Fitting models... 
+[2022-08-11 17:07:12]  Working on  20 of 30 
+[2022-08-11 17:07:12]  Re-Fitting models... 
+[2022-08-11 17:07:15]  Working on  25 of 30 
+[2022-08-11 17:07:15]  Re-Fitting models... 
+[2022-08-11 17:07:19]  Working on  30 of 30 
+[2022-08-11 17:07:19]  len(build_predictions): 36 
+[2022-08-11 17:10:11]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:10:11]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:10:11]  len(dataset.values) 1650 
+[2022-08-11 17:10:11]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:10:11]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:10:11]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:10:11]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:10:11]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:10:11]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:10:11]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:10:11]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:10:11]  len(irradiance_orig): 1650 
+[2022-08-11 17:10:11]  len(dataset.values) 1650 
+[2022-08-11 17:10:11]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:10:11]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:10:11]  Loading model file: models\tsinet_model 
+[2022-08-11 17:10:11]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 17:10:11]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:10:16]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:10:16]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000020D180FF5B0> 
+[2022-08-11 17:10:16]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:10:16]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:10:16]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:10:16]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:10:16]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:10:16]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:10:16]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:10:16]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:10:16]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:10:16]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:10:16]  Processing with k steps = 5 
+[2022-08-11 17:10:16]  Working on  5 of 30 
+[2022-08-11 17:10:17]  Re-Fitting models... 
+[2022-08-11 17:10:21]  Working on  10 of 30 
+[2022-08-11 17:10:21]  Re-Fitting models... 
+[2022-08-11 17:10:25]  Working on  15 of 30 
+[2022-08-11 17:10:25]  Re-Fitting models... 
+[2022-08-11 17:10:28]  Working on  20 of 30 
+[2022-08-11 17:10:28]  Re-Fitting models... 
+[2022-08-11 17:10:31]  Working on  25 of 30 
+[2022-08-11 17:10:31]  Re-Fitting models... 
+[2022-08-11 17:10:35]  Working on  30 of 30 
+[2022-08-11 17:10:35]  len(build_predictions): 36 
+[2022-08-11 17:10:48]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:10:48]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:10:48]  len(dataset.values) 1650 
+[2022-08-11 17:10:48]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:10:48]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:10:48]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:10:48]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:10:48]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:10:48]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:10:48]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:10:48]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:10:48]  len(irradiance_orig): 1650 
+[2022-08-11 17:10:48]  len(dataset.values) 1650 
+[2022-08-11 17:10:48]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:10:48]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:10:48]  Loading model file: models\tsinet_model 
+[2022-08-11 17:10:48]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 17:10:48]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:10:53]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:10:53]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x0000019F140547F0> 
+[2022-08-11 17:10:53]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:10:53]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:10:54]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:10:54]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:10:54]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:10:54]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:10:54]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:10:54]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:10:54]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:10:54]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:10:54]  Processing with k steps = 5 
+[2022-08-11 17:10:54]  Working on  5 of 30 
+[2022-08-11 17:10:54]  Re-Fitting models... 
+[2022-08-11 17:10:59]  Working on  10 of 30 
+[2022-08-11 17:10:59]  Re-Fitting models... 
+[2022-08-11 17:11:02]  Working on  15 of 30 
+[2022-08-11 17:11:02]  Re-Fitting models... 
+[2022-08-11 17:11:05]  Working on  20 of 30 
+[2022-08-11 17:11:05]  Re-Fitting models... 
+[2022-08-11 17:11:08]  Working on  25 of 30 
+[2022-08-11 17:11:09]  Re-Fitting models... 
+[2022-08-11 17:11:12]  Working on  30 of 30 
+[2022-08-11 17:11:12]  len(build_predictions): 36 
+[2022-08-11 17:11:57]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:11:57]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:11:57]  len(dataset.values) 1650 
+[2022-08-11 17:11:57]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:11:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:11:57]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:11:57]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:11:57]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:11:57]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:11:57]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:11:57]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:11:57]  len(irradiance_orig): 1650 
+[2022-08-11 17:11:57]  len(dataset.values) 1650 
+[2022-08-11 17:11:57]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:11:57]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:11:57]  Loading model file: models\tsinet_model 
+[2022-08-11 17:11:57]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 17:11:57]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:12:02]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:12:02]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x000001F59BB1C7F0> 
+[2022-08-11 17:12:02]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:12:02]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:12:03]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:12:03]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:12:03]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:12:03]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:12:03]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:12:03]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:12:03]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:12:03]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:12:03]  Processing with k steps = 5 
+[2022-08-11 17:12:03]  Working on  5 of 30 
+[2022-08-11 17:12:03]  Re-Fitting models... 
+[2022-08-11 17:12:07]  Working on  10 of 30 
+[2022-08-11 17:12:08]  Re-Fitting models... 
+[2022-08-11 17:12:11]  Working on  15 of 30 
+[2022-08-11 17:12:11]  Re-Fitting models... 
+[2022-08-11 17:12:14]  Working on  20 of 30 
+[2022-08-11 17:12:14]  Re-Fitting models... 
+[2022-08-11 17:12:18]  Working on  25 of 30 
+[2022-08-11 17:12:18]  Re-Fitting models... 
+[2022-08-11 17:12:21]  Working on  30 of 30 
+[2022-08-11 17:12:21]  len(build_predictions): 36 
+[2022-08-11 17:12:21]  Total time: 24331 
+[2022-08-11 17:16:07]  dataset.columns: Index(['date', 'irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:16:07]  cols: Index(['irradiance', 'instrument_accuracy_1au (W/m^2)',
+       'instrument_precision_1au (W/m^2)',
+       'solar_standard_deviation_1au (W/m^2)',
+       'measurement_uncertainty_1au (W/m^2)', 'tsi_true_earth (W/m^2)',
+       'instrument_accuracy_true_earth (W/m^2)',
+       'instrument_precision_true_earth (W/m^2)',
+       'solar_standard_deviation_true_earth (W/m^2)',
+       'measurement_uncertainty_true_earth (W/m^2)',
+       'avg_measurement_date (Julian Date)',
+       'std_dev_measurement_date (days)'],
+      dtype='object') 
+[2022-08-11 17:16:07]  len(dataset.values) 1650 
+[2022-08-11 17:16:07]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:16:07]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:16:07]  Removing instrument_accuracy_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_precision_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing solar_standard_deviation_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing measurement_uncertainty_1au (W/m^2) 
+[2022-08-11 17:16:07]  Removing tsi_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_accuracy_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing instrument_precision_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing solar_standard_deviation_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing measurement_uncertainty_true_earth (W/m^2) 
+[2022-08-11 17:16:07]  Removing avg_measurement_date (Julian Date) 
+[2022-08-11 17:16:07]  Removing std_dev_measurement_date (days) 
+[2022-08-11 17:16:07]  o {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:16:08]  stats: {'max_irradiance': 1362.2768, 'min_irradiance': 1357.0238} 
+[2022-08-11 17:16:08]  len(irradiance_orig): 1650 
+[2022-08-11 17:16:08]  len(dataset.values) 1650 
+[2022-08-11 17:16:08]  test[:7] [0.4557247  0.4448029  0.41785126 0.39647814 0.3768189  0.39362167
+ 0.3962429 ] 
+[2022-08-11 17:16:08]  Reconstructing data set with a trained TSINet model 
+[2022-08-11 17:16:08]  Loading model file: models\tsinet_model 
+[2022-08-11 17:16:08]  Check if file exists: models\tsinet_model : True 
+[2022-08-11 17:16:08]  Reconstruction will be performed using the model file: models\tsinet_model 
+[2022-08-11 17:16:13]  Returning loaded model from file: models\tsinet_model 
+[2022-08-11 17:16:13]  TSInet model: <tensorflow.python.keras.engine.sequential.Sequential object at 0x000001F5A4173C10> 
+[2022-08-11 17:16:13]  _____________________________ DONE LOADING THE MDDEL____________________________ 
+[2022-08-11 17:16:13]  input_x.shape: (1, 7, 1) 
+[2022-08-11 17:16:13]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:16:13]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:16:13]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:16:13]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:16:13]  Check model data file: models\tsinet_train_x.sav 
+[2022-08-11 17:16:13]  loading model objects with pickle None  from file:  models\tsinet_train_x.sav 
+[2022-08-11 17:16:13]  Check model data file: models\tsinet_train_y.sav 
+[2022-08-11 17:16:13]  loading model objects with pickle None  from file:  models\tsinet_train_y.sav 
+[2022-08-11 17:16:13]  Processing with k steps = 5 
+[2022-08-11 17:16:13]  Working on  5 of 30 
+[2022-08-11 17:16:13]  Re-Fitting models... 
+[2022-08-11 17:16:18]  Working on  10 of 30 
+[2022-08-11 17:16:18]  Re-Fitting models... 
+[2022-08-11 17:16:21]  Working on  15 of 30 
+[2022-08-11 17:16:21]  Re-Fitting models... 
+[2022-08-11 17:16:25]  Working on  20 of 30 
+[2022-08-11 17:16:25]  Re-Fitting models... 
+[2022-08-11 17:16:28]  Working on  25 of 30 
+[2022-08-11 17:16:28]  Re-Fitting models... 
+[2022-08-11 17:16:31]  Working on  30 of 30 
+[2022-08-11 17:16:31]  len(build_predictions): 36 
+[2022-08-11 17:16:31]  Total time: 274789 

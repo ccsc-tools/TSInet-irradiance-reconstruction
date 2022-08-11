@@ -48,7 +48,10 @@ data_dir = 'train_data/'
 result_data_dir = 'results/'
 data_train_validate_file_name = 'train_data' + os.sep + 'SORCE_TSI.csv'
 num_value = 1
-      
+num_units=400
+verbose = False
+attention_layer=True
+
 def train_tsinet():
     starting_time = int(round(time.time() * 1000))
     log('data_train_validate_file_name:', data_train_validate_file_name)
@@ -132,47 +135,63 @@ def train_tsinet():
         print('Finished TSInet training...')
 
 
-'''
-Command line parameters parser
-'''
-ap = argparse.ArgumentParser()
-
-ap.add_argument("-e", "--epochs", type=int, default=epochs,
-    help="Number of epochs to train the network.")
-
-ap.add_argument("-a", "--attention_layer", required = False, default=True,
-    help="Add the additional layer to generate more focused input and output. Default is True")
-
-ap.add_argument("-u", "--num_units", type = int, required = False, default= 400,
-    help="The number of LSTM units to use during learning. Default is 400")
-
-ap.add_argument("-n", "--normalize_data", type = bool, required = False, default= True,
-    help="Normalize the TSI data before processing, default is True.")
-
-ap.add_argument("-l", "--verbose", type = bool, required = False, default= False,
-    help="Verbose level to print processing logs, default is False.")
-
-ap.add_argument("-v", "--model_verbose", type = int, required = False, default= 2,
-    help="Verbose level to print processing logs, default is 2, one line per epoch. 1 is a progress bar for each epoch, and 0 is silent.")
-
-# ap.add_argument("-d", "--dataset_file", type = str, required = False, default=data_train_validate_file_name,
-#     help="The full path of the training data set file. This should be pointing to the SORCE data set. Default is "  + data_train_validate_file_name +'.' )
-
-
-args = vars(ap.parse_args())
-verbose = boolean(args['verbose'])
-set_verbose(verbose)
-log('args:', args)
-num_units = int( args['num_units'])
-epochs = args['epochs']
-attention_layer = boolean(args['attention_layer'])
-normalize_data = boolean(args['normalize_data'])
-model_verbose=int(args['model_verbose'])
-# data_train_validate_file_name=args['dataset_file']
-
-if not os.path.exists(data_train_validate_file_name):
-    print('\nTraining dataset does not exist:', data_train_validate_file_name,'. Please check the ReadMe file on how to download the artifacts.')
-    sys.exit()
+def process_args(args):
+    global verbose
+    global num_units 
+    global epochs 
+    global attention_layer 
+    global normalize_data
+    global model_verbose
+    global data_train_validate_file_name
+    
+    if 'verbose' in args:
+        verbose = boolean(args['verbose'])
+    set_verbose(verbose)
+    if 'num_units' in args:
+        num_units = int( args['num_units'])
+    if 'epochs' in args:
+        epochs = args['epochs']
+    if 'attention_layer' in args:
+        attention_layer = boolean(args['attention_layer'])
+        
+    if 'normalize_data' in args:
+        normalize_data = boolean(args['normalize_data'])
+    if 'model_verbose' in args:
+        model_verbose=int(args['model_verbose'])
+    if 'training_file' in args:
+        data_train_validate_file_name = args['training_file']
+        
+    if not os.path.exists(data_train_validate_file_name):
+        print('\nTraining dataset does not exist:', data_train_validate_file_name,'. Please check the ReadMe file on how to download the artifacts.')
+        sys.exit()
 
 if __name__ == "__main__":
+    '''
+    Command line parameters parser
+    '''
+    ap = argparse.ArgumentParser()
+    
+    ap.add_argument("-e", "--epochs", type=int, default=epochs,
+        help="Number of epochs to train the network.")
+    
+    ap.add_argument("-a", "--attention_layer", required = False, default=True,
+        help="Add the additional layer to generate more focused input and output. Default is True")
+    
+    ap.add_argument("-u", "--num_units", type = int, required = False, default= 400,
+        help="The number of LSTM units to use during learning. Default is 400")
+    
+    ap.add_argument("-n", "--normalize_data", type = bool, required = False, default= True,
+        help="Normalize the TSI data before processing, default is True.")
+    
+    ap.add_argument("-l", "--verbose", type = bool, required = False, default= False,
+        help="Verbose level to print processing logs, default is False.")
+    
+    ap.add_argument("-v", "--model_verbose", type = int, required = False, default= 2,
+        help="Verbose level to print processing logs, default is 2, one line per epoch. 1 is a progress bar for each epoch, and 0 is silent.")
+    
+    
+    args = vars(ap.parse_args())
+    
+    parse_args(args)
+    
     train_tsinet()

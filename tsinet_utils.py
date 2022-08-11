@@ -44,38 +44,30 @@ def boolean(b):
     return False
 
 
-
-if int(tf_version[0]) > 1 :
-    if py_vers_2 == '3.6':
-        print('You are using Python version:', py_vers, ' with tensorflow ',tf_version, ' > 1.14 . TSInet was not tested with these versions.\nPlease check the ReadMe for compatible versions.\n ')
-        answer = input('Are you sure you want to continue?[y/n]')
-        if not boolean(str(answer).strip().lower()):
-            sys.exit()
-    file_ex = ''
-    print('\033[93m','\n\t\tWARNING: The Tensorflow backend used in this run is not the same version the train and test initially was done.\n\t\tPlease make sure your Tensorflow and CUDA GPU are configured properly.','\033[0m')
 from math import sqrt
 from numpy import split
 from numpy import array
 from sklearn.metrics import mean_squared_error
-import keras
-from keras.models import Sequential
-from keras.layers import Dense
-from keras.layers import Flatten
-from keras.layers import LSTM
-from keras.layers import RepeatVector
-from keras.layers import TimeDistributed
-from keras.layers import ConvLSTM2D
-from keras.layers import RepeatVector
-from keras.layers import TimeDistributed
-from keras.layers.convolutional import Conv1D
-from keras.layers.convolutional import Conv2D
-from keras.layers.convolutional import MaxPooling1D
-from keras.layers.convolutional import MaxPooling2D
+from tensorflow import keras
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Flatten
+from tensorflow.keras.layers import LSTM
+from tensorflow.keras.layers import RepeatVector
+from tensorflow.keras.layers import TimeDistributed
+from tensorflow.keras.layers import ConvLSTM2D
+from tensorflow.keras.layers import RepeatVector
+from tensorflow.keras.layers import TimeDistributed
+from tensorflow.keras.layers import Conv1D
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling1D
+from tensorflow.keras.layers import MaxPooling2D
 from keras_self_attention import SeqSelfAttention
+from tensorflow.keras import Sequential
 
 from pathlib import Path
 from os import listdir
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 import pandas as pd
 import numpy as np
 import csv 
@@ -89,6 +81,12 @@ from contextlib import contextmanager
 import sys
 from os import path
 from os.path import isfile
+
+import matplotlib.pyplot as plt
+import numpy as np
+import matplotlib.dates as md
+import matplotlib.ticker as mticker
+
 import tsinet_utils as si_utils
 
 verbose = True
@@ -161,12 +159,12 @@ def load_model( model_dir='models', model_type='tsinet', model_name='tsinet'):
         
     model_file = model_dir + os.sep +  model_name + "_model" + file_ext
     default_model_file = 'default_model' + os.sep +  model_name + "_model" + file_ext      
-    log("Loading model file: " + model_file)
+    log("Loading model file: " + model_file,verbose=True)
     loading_file_name = model_file
     if is_file_exists(model_file) :
         loading_file_name = model_file
     elif is_file_exists(default_model_file):
-        log('Model was not found, trying the default model')
+        log('Model was not found, trying the default model',verbose=True)
         loading_file_name = default_model_file
     else:
         print('\033[93m','\n\t\tERROR: No model found to reconstruct the data set, please train a model first using tsinet_train','\033[0m')
@@ -281,7 +279,7 @@ def get_model_irradiance_stats(file_prefix='irradiance_max_min', models_dir='mod
         log('required file does not exist:', file_name, ', using default model file: default_model/'  + file_prefix  +'.txt')
         file_name = file_name=  'default_model/'  + file_prefix  +'.txt'
         if not os.path.exists(file_name):
-            print('required file:', file_prefix+'.txt does not exist. Please make sure to download the required files from our github')
+            print('required file does not exist. Please make sure to download the required files from our github or retrain the model.')
             sys.exit()
     handler = open(file_name,'r')
     o={}
@@ -596,7 +594,42 @@ def check_satirem(dataset_name, number_of_days):
             if not boolean(str(answer)):
                 sys.exit() 
             
-            
+
+def plot_figures(result_file):
+    data = pd.read_csv(result_file)
+    dates = data[data.columns[0]]
+    tsinet = data[data.columns[2]]
+    dataset = data[data.columns[1]]
+    dataset_name = data.columns[1]
+    figsize=(8, 3)
+    fig, ax = plt.subplots(figsize=figsize)
+    dates = [parse_date(d) for d in dates]
+    ax.plot(dates, dataset,color='blue')
+    ax.plot(dates, tsinet,
+             color='orange',   
+             linewidth=1.0,  
+             linestyle='solid' 
+            )
+    plt.ylabel('TSI')
+    plt.xlabel('Time')
+    
+    ax.xaxis.set_major_locator(plt.MaxNLocator(4))
+    nums = len(dates)//4
+    if dataset_name == 'TCTE':
+        dates = [str(d).replace(' 00:00:00','').strip() for d in dates]
+        yticks = [1358,1359,1360,1361,1362,1363,1364]
+        ax.yaxis.set_ticks(yticks)
+    
+    xfmt = md.DateFormatter('%m/%d/%y')
+    ax.xaxis.set_major_formatter(xfmt)
+    
+    ax.set_xticklabels(('',dates[0],dates[nums], dates[nums*2], dates[nums*3],dates[len(dates)-1]))
+    print('\n\n*NOTE: the figure scale is large compared to the difference between the observed and predicted values, therefore you may see a big difference, but in actuality, the absolute difference between the values are very small.')
+    plt.show()
+
+def parse_date(d):
+    d=str(d)
+    return datetime.strptime(d, "%Y-%m-%d %H:%M:%S")   
 def process_satirem(predictions):
     print('number of predictions points:', len(predictions))
     a = np.array_split(np.array(predictions), int(float(len(predictions)/(365*10))))

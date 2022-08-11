@@ -52,6 +52,8 @@ d_now = datetime.now()
 number_of_days = 30
 k_steps = 5
 model_verbose = 0
+result_file_name = None
+model_dir='models'
 
 def reconstruct_tsinet():
     '''
@@ -72,7 +74,6 @@ def reconstruct_tsinet():
         sys.exit()
     check_satirem(dataset_name, number_of_days)
     if verbose == False:
-        print('You may turn on verbose to True using the option -l to see more debug information during the process.')
         print('\nPlease wait while reconstructing...')    
     dates = dataset_date['date']
     # log(dates)
@@ -90,7 +91,7 @@ def reconstruct_tsinet():
         if c != 'irradiance':
             dataset_test=si_utils.drop_column_from_dataset(dataset_test,c)
     
-    stats = si_utils.get_model_irradiance_stats()
+    stats = si_utils.get_model_irradiance_stats(models_dir=model_dir)
     log('stats:', stats)
     max_irradiance = stats['max_irradiance']
     min_irradiance = stats['min_irradiance']
@@ -116,7 +117,7 @@ def reconstruct_tsinet():
     train_x = test[:7]
     
     log('Reconstructing data set with a trained TSINet model')
-    tsinet_model = load_model(model_type='tsinet', model_name='tsinet')
+    tsinet_model = load_model(model_dir=model_dir,model_type='tsinet', model_name='tsinet')
     log('TSInet model:', tsinet_model)
     
     log('_____________________________ DONE LOADING THE MDDEL____________________________',verbose=verbose)
@@ -132,11 +133,10 @@ def reconstruct_tsinet():
     prediction = tsinet_model.predict(input_x)
     
     build_predictions.extend(input_x.reshape(n_input)[0:n_input])
-    
-    train_x = si_utils.load_model_data(model_type='tsinet', data_name='train_x') 
-    train_y = si_utils.load_model_data(model_type='tsinet', data_name='train_y') 
-    train_x_orig = si_utils.load_model_data(model_type='tsinet', data_name='train_x') 
-    train_y_orig = si_utils.load_model_data(model_type='tsinet', data_name='train_y')  
+    train_x = si_utils.load_model_data(model_dir=model_dir,model_type='tsinet', data_name='train_x') 
+    train_y = si_utils.load_model_data(model_dir=model_dir,model_type='tsinet', data_name='train_y') 
+    train_x_orig = si_utils.load_model_data(model_dir=model_dir,model_type='tsinet', data_name='train_x') 
+    train_y_orig = si_utils.load_model_data(model_dir=model_dir,model_type='tsinet', data_name='train_y')  
     
     if number_of_days == 0 :
         number_of_days = len(irradiance_orig)
@@ -230,74 +230,88 @@ def reconstruct_tsinet():
     print('Finished the reconstruction process.')
     print('Results are written to:', result_file_name)
 
-'''
-Command line parameters parser
-'''
-ap = argparse.ArgumentParser()
-
-ap.add_argument("-n", "--dataset_name", type=str, required = True,
-    help="The data set name for the data you want to reconstruct. The required dataset name can be one of the datasets: TCTE, SATIRE-S, NRLTSI2, SATIRE-M")
-
-# ap.add_argument("-f", "--file_name", required = False, default=data_test_file_name,
-#     help="Full path to the data set file to construct. Default is: " + data_test_file_name)
-
-ap.add_argument("-r", "--result_file_name", required = False,
-    help="Full path to the result file to save the reconstructed data. Default is: tsinet_result_<dataset name>.csv. File will be saved in the results directory.")
-
-ap.add_argument("-e", "--epochs", type = int, required = False, default = epochs,
-    help="The number of epochs to use when re-fitting the data into the model. Default is " + str(epochs))
-msg="The number of days to reconstruct for the given reconstruction data set. "
-msg= msg + "Default is only 30 days of the reconstruction data set. "
-msg = msg + "\n\033[93mNote: depending on the size of the data this may take long time, "
-msg = msg + "therefore, it's recommended to provide smaller number such as 10-30 days at least for testing and before you run full data set, to use the full size of the data, provide 0 days.\033[0m."
-ap.add_argument("-z", "--number_of_days", type = int, required = False, default=number_of_days,
-    help=msg)
-
-ap.add_argument("-k", "--k_steps", type = int, required = False, default = k_steps,
-    help='Number of k-steps to refit the model.')
-
-ap.add_argument("-l", "--verbose", type = bool, required = False, default= False,
-    help="Verbose level to print processing logs, default is False.")
-
-args = vars(ap.parse_args())
-verbose = boolean(args['verbose'])
-set_verbose(verbose)
-log('args:', args)
-epochs = args['epochs']
-dataset_name = str(args['dataset_name']).strip().upper()
-
-if not dataset_name in ['TCTE', 'SATIRE-S', 'NRLTSI2', 'SATIRE-M']:
-    print('Invalid dataset name:', dataset_name) 
-    print('Available dataset names:TCTE, SATIRE-S, NRLTSI2, SATIRE-M')
-    sys.exit()
-
-data_test_file_name = 'test_data' + os.sep + dataset_name + '_TSI.csv'
-if not os.path.exists(data_test_file_name):
-    print('Dataset test file does not exist. Please check the read me on how to download the artifacts.')
-    sys.exit()  
+def process_args(args):
+    global result_file_name
+    global model_dir 
+    global epochs 
+    global verbose 
+    verbose = False 
+    if 'verbose' in args:
+        verbose = boolean(args['verbose'])
+    set_verbose(verbose)
     
-# file_name = str(args['file_name'])
-verbose=boolean(args['verbose'])
-print('verbose:', verbose)
-result_file_name=args['result_file_name']
-if result_file_name is None:
-    result_file_name = 'tsinet_result_' + dataset_name +'.csv'
+    if 'epochs' in args:
+        epochs = args['epochs']
+    dataset_name = str(args['dataset_name']).strip().upper()
     
-result_file_name = 'results' + os.sep + result_file_name
-
-
-k_steps = int(args['k_steps'])
-if k_steps < 1:
-    print('Invalid number of steps:', k_steps, '. Must be >= 1')
-    sys.exit()
+    if not dataset_name in ['TCTE', 'SATIRE-S', 'NRLTSI2', 'SATIRE-M']:
+        print('Invalid dataset name:', dataset_name) 
+        print('Available dataset names:TCTE, SATIRE-S, NRLTSI2, SATIRE-M')
+        sys.exit()
     
-number_of_days = int(args['number_of_days'])
-if number_of_days < 0:
-    print('Invalid number of days:', number_of_days, '. Must be >= 0')
-    sys.exit()
-
-
-
-
+    data_test_file_name = 'test_data' + os.sep + dataset_name + '_TSI.csv'
+    if not os.path.exists(data_test_file_name):
+        print('Dataset test file does not exist. Please check the read me on how to download the artifacts.')
+        sys.exit()  
+        
+    if 'result_file_name' in args:
+        result_file_name=args['result_file_name']
+        
+    if result_file_name is None:
+        result_file_name = 'results' + os.sep + result_file_name
+    
+    global k_steps 
+    if 'k_steps' in args:
+        k_steps = int(args['k_steps'])
+    if k_steps < 1:
+        print('Invalid number of steps:', k_steps, '. Must be >= 1')
+        sys.exit()
+    
+    global number_of_days
+    if 'number_of_days' in args:
+        number_of_days = int(args['number_of_days'])
+        
+    if number_of_days < 0:
+        print('Invalid number of days:', number_of_days, '. Must be >= 0')
+        sys.exit()
+        
+    if 'model_dir' in args:
+        model_dir=args['model_dir']
+    print('model_dir:', model_dir)
+    
+    
 if __name__ == "__main__":
+    '''
+    Command line parameters parser
+    '''
+    ap = argparse.ArgumentParser()
+    
+    ap.add_argument("-n", "--dataset_name", type=str, required = True,
+        help="The data set name for the data you want to reconstruct. The required dataset name can be one of the datasets: TCTE, SATIRE-S, NRLTSI2, SATIRE-M")
+    
+    # ap.add_argument("-f", "--file_name", required = False, default=data_test_file_name,
+    #     help="Full path to the data set file to construct. Default is: " + data_test_file_name)
+    
+    ap.add_argument("-r", "--result_file_name", required = False,
+        help="Full path to the result file to save the reconstructed data. Default is: tsinet_result_<dataset name>.csv. File will be saved in the results directory.")
+    
+    ap.add_argument("-e", "--epochs", type = int, required = False, default = epochs,
+        help="The number of epochs to use when re-fitting the data into the model. Default is " + str(epochs))
+    msg="The number of days to reconstruct for the given reconstruction data set. "
+    msg= msg + "Default is only 30 days of the reconstruction data set. "
+    msg = msg + "\n\033[93mNote: depending on the size of the data this may take long time, "
+    msg = msg + "therefore, it's recommended to provide smaller number such as 10-30 days at least for testing and before you run full data set, to use the full size of the data, provide 0 days.\033[0m."
+    ap.add_argument("-z", "--number_of_days", type = int, required = False, default=number_of_days,
+        help=msg)
+    
+    ap.add_argument("-k", "--k_steps", type = int, required = False, default = k_steps,
+        help='Number of k-steps to refit the model.')
+    
+    ap.add_argument("-l", "--verbose", type = bool, required = False, default= False,
+        help="Verbose level to print processing logs, default is False.")
+    
+    args = vars(ap.parse_args())
+
+    process_args(args)
+    
     reconstruct_tsinet()
