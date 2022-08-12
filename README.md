@@ -1,5 +1,5 @@
 ## Reconstruction of Total Solar Irradiance by Deep Learning <br>
-[![DOI](https://github.com/ccsc-tools/zenodo_icons/blob/main/icons/dst.svg)](https://zenodo.org/badge/latestdoi/507188155)
+[![DOI](https://github.com/ccsc-tools/zenodo_icons/blob/main/icons/tsinet.svg)](https://zenodo.org/badge/latestdoi/522749070)
 
 
 ## Authors
