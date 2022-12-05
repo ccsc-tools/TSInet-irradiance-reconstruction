@@ -257,8 +257,8 @@ def process_args(args):
     if 'result_file_name' in args:
         result_file_name=args['result_file_name']
         
-    if result_file_name is not None:
-        result_file_name = 'results' + os.sep + result_file_name
+    if result_file_name is None:
+        result_file_name = 'results' + os.sep + str(dataset_name) + '_result.csv'
     
     global k_steps 
     if 'k_steps' in args:
