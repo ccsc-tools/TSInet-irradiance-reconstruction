@@ -257,7 +257,7 @@ def process_args(args):
     if 'result_file_name' in args:
         result_file_name=args['result_file_name']
         
-    if result_file_name is None:
+    if result_file_name is not None:
         result_file_name = 'results' + os.sep + result_file_name
     
     global k_steps 
