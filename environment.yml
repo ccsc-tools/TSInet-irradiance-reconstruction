@@ -14,3 +14,4 @@ dependencies:
   - sklearn
   - matplotlib==3.5.1
   - scipy==1.7.1
+  - keras-self-attention==0.51.0
