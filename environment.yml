@@ -2,16 +2,14 @@ name: binder_env
 channels:
 - defaults
 dependencies:
-- pandas=1.4.2
-- python=3.8.13
+- pandas=1.5.3
+- python=3.9.16
 - pip
 - pip:
-  - tensorflow==2.4.0
-  - tensorflow-gpu==2.4.0
-  - numpy==1.19.5
-  - keras==2.3.0
-  - scikit-learn
-  - sklearn
-  - matplotlib==3.5.1
-  - scipy==1.7.1
-  - keras_self_attention
+  - tensorflow==2.10.1
+  - numpy==1.24.2
+  - keras==2.10.0
+  - scikit-learn==1.2.1
+  - matplotlib==3.6.3
+  - scipy==1.10.0 	
+  - keras-self-attention==0.51.0
